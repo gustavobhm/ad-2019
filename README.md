@@ -2,13 +2,17 @@
 springboot-jpa-rest-mail-angular
 
 # Instructions 
-1- Build and Run backend project with command lines: 
+1- Run the fake mailer server:
+  * fakeSMTP-2.0.jar
+#
+2- Build and Run backend project with command lines: 
   * mvn clean install
   * mvn spring-boot:run
 #
-2 - Run the frontend project with command:  
+3 - Run the frontend project with command:  
+  * npm install
   * ng serve
 #
-3 - Access the application at address: 
+4 - Access the application at address: 
   * "http://localhost:4200"
 #
