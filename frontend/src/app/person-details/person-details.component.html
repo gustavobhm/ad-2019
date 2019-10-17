@@ -1,0 +1,19 @@
+<div *ngIf="person">
+
+  <div>
+    <label>Name: </label> {{person.name}}
+  </div>
+
+  <div>
+    <label>Email: </label> {{person.email}}
+  </div>
+  
+  <div>
+    <label>Friend: </label> {{person.friend}}
+  </div>
+
+  <span class="button is-small btn-danger" (click)='deletePerson()'>Delete</span>
+
+  <hr/>
+
+</div>

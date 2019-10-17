@@ -1,0 +1,22 @@
+<h3>New Person</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="person.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" class="form-control" id="email" required [(ngModel)]="person.email" name="email">
+    </div>
+
+    <button type="submit" class="btn btn-success" >Save</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Person created successfully!</h4>
+  <button class="btn btn-success" (click)="newPessoa()">OK</button>
+</div>

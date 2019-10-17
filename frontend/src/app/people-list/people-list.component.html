@@ -1,0 +1,10 @@
+<h3>People List</h3>
+
+<div *ngFor="let person of people | async" style="width: 300px;">
+  <person-details [person]='person'></person-details>
+</div>
+
+<div>
+  <button type="button" class="button btn-danger" (click)='deletePeople()'>Delete All</button>
+  <button type="button" class="button btn-success" (click)='shufflePeopleAndSendEmail()'>Shuffle and Send Email</button>
+</div>
